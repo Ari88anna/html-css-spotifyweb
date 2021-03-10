@@ -5,6 +5,10 @@
     box-sizing:border-box;
 }
 
+img {
+    width: 100%;
+}
+
 /* Common */
 body {
     font-family: Arial, Helvetica, sans-serif
@@ -21,7 +25,7 @@ body {
     height: calc( 100% - 80px );
 
     /* test */
-    background-color: blueviolet;
+    background-color: blue;
 }
 
 /* NAV */
@@ -31,7 +35,43 @@ nav {
     height: 100%;
     /* test */
     background-color: violet;
+    overflow: hidden;
 }
+
+@media all and (max-width: 768px) {
+    nav {
+        width: 50px;
+    }
+}
+
+.sptfy-logo {
+    height: 80px;
+    padding: 20px 60px 20px 20px;
+}
+
+.sptfy-logo-small {
+    height: 50px;      
+}
+
+.sptfy-logo-small img {
+    height: 100%;
+}
+
+@media all and (max-width: 768px) {
+    .sptfy-logo {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .sptfy-logo-small {
+        display:none;
+    }
+}
+
+
+
+
 
 /* MAIN */
 main {
@@ -43,6 +83,14 @@ main {
     /* test */
     background-color:darkseagreen;
 }
+
+@media all and (max-width: 768px) {
+    main {
+        width: calc( 100% - 50px)
+    }
+}
+
+
 
 
 
@@ -56,6 +104,8 @@ footer {
 }
 
 
+
+
 /* Header Fixed */
 
 .header-fixed {
@@ -66,4 +116,10 @@ footer {
     right: 0px;
     width: calc( 100% - 250px);
     height: 80px;
+}
+
+@media all and (max-width: 768px) {
+    .header-fixed {
+        width: calc( 100% - 50px);
+    }
 }
