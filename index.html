@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Spotify</title>
 </head>
 <body>
@@ -21,10 +21,10 @@
             <nav>
                 
                 <!-- logo -->
-                <div class="sptfy-logo">
+                <div class="sptfy-logo xs-hidden">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <div class="sptfy-logo-small">
+                <div class="sptfy-logo-small sm-hidden">
                     <img src="img/logo-small.svg" alt="">
                 </div>
                 <!-- end logo -->
@@ -33,16 +33,27 @@
                 <div class="nav-content">        
 
                     <!-- app-nav -->
-                    <div class="app_nav">
+                    <div class="app-nav">
                         <ul>
-                            <li>                                
-                                <a href="">Home</a>
+                            <li class="ms-bold">                                
+                                <a href="">
+                                    <img src="img/home.svg" alt="">
+                                    Home
+                                </a>
                             </li>
+
                             <li>
-                                <a href="">Cerca</a>
+                                <a href="">
+                                    <img src="img/search.svg" alt="">
+                                    Cerca
+                                </a>
                             </li>
+
                             <li>
-                                <a href="">La tua libreria</a>
+                                <a href="">
+                                    <img src="img/libreria.svg" alt="">
+                                    La tua libreria
+                                </a>
                             </li>
                         </ul>
 
@@ -51,18 +62,23 @@
 
 
                     <!-- playlist -->
-                    <div class="playlist">
-                        
+                    <div class="playlist xs-hidden">
+                                                
                         <h3>Playlist</h3>
-                        <a href="">Crea Playlist</a>
+
+                        <div class="add-playlists">
+                            <div class="add"><i class="fas fa-plus"></i></div>                            
+                            <a href="">Crea Playlist</a>
+                        </div>                
+                        
                         <ul>
-                            <li><a href="">Nuova Playlist</a></li>
-                            <li><a href="">Nuova Playlist</a></li>
-                            <li><a href="">Nuova Playlist</a></li>
-                            <li><a href="">Nuova Playlist</a></li>
-                            <li><a href="">Nuova Playlist</a></li>
-                            <li><a href="">Nuova Playlist</a></li>
-                            <li><a href="">Nuova Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
                         </ul>
 
                     </div>

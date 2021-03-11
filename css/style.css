@@ -19,22 +19,31 @@ body {
     width: 100%;   
 }
 
+
+@media all and (max-width: 768px) {
+    .xs-hidden {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .sm-hidden {
+        display:none;
+    }
+}
+
 /* Container */
 
 .container {
     height: calc( 100% - 80px );
-
-    /* test */
-    background-color: blue;
 }
 
 /* NAV */
 nav {
     float: left;
     width: 250px;
-    height: 100%;
-    /* test */
-    background-color: violet;
+    height: 100%;    
+    background-color: black;
     overflow: hidden;
 }
 
@@ -44,30 +53,90 @@ nav {
     }
 }
 
+
+/* logo */
 .sptfy-logo {
     height: 80px;
-    padding: 20px 60px 20px 20px;
+    width: 180px;
+    padding: 10px 20px;
 }
-
 .sptfy-logo-small {
-    height: 50px;      
+    padding: 5px     
 }
 
-.sptfy-logo-small img {
+
+/* Nav content */
+.nav-content {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc( 100% - 80px);
+    padding-left: 20px;
+}
+
+.nav-content ul {
+    list-style-type: none;
+}
+.nav-content li {
+    padding-top: 10px;
+}
+
+.nav-content a {
+    color: grey;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.ms-bold a {
+    color: white;
+    font-weight: 900;
+}
+
+.nav-content h3 {
+    text-transform: uppercase;
+    font-size: 12px;  
+    font-weight: 900;
+    color: white;
+
+}
+
+.app-nav img {
+    width: 12%;
+    vertical-align: middle;
+}
+
+.playlist {
+    overflow: hidden;
+}
+
+.playlist ul {             /*per far comparire la scrollbar quando si riduce lo schermo*/
+    overflow-y: auto;
     height: 100%;
 }
 
-@media all and (max-width: 768px) {
-    .sptfy-logo {
-        display: none;
-    }
+.playlist {
+    flex-grow:1;
+    padding-top: 20px;
 }
 
-@media all and (min-width: 768px) {
-    .sptfy-logo-small {
-        display:none;
-    }
+.add-playlists {
+    margin: 5px 0;
 }
+.add {
+    height: 35px;
+    width: 35px;
+    background-color: grey;
+    text-align: center;
+    line-height: 35px;
+    display: inline-block;
+    cursor: pointer;    
+}
+.add-playlists a {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
 
 
 
@@ -78,10 +147,8 @@ main {
     float: left;
     height: 100%;
     width: calc(100% - 250px);
-    padding-top: 80px;
-
-    /* test */
-    background-color:darkseagreen;
+    padding-top: 80px;    
+    background-color:#141922;
 }
 
 @media all and (max-width: 768px) {
@@ -97,10 +164,8 @@ main {
 /* FOOTER */
 
 footer {
-    height: 80px;
-
-    /* test */
-    background-color: cornflowerblue;
+    height: 80px;    
+    background-color: #282828;
 }
 
 
@@ -109,7 +174,7 @@ footer {
 /* Header Fixed */
 
 .header-fixed {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #080b12;
     text-align: right;
     position: fixed;    
     top: 0px;
