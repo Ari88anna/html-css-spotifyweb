@@ -74,6 +74,12 @@ nav {
     padding-left: 20px;
 }
 
+@media all and (max-width: 768px) {
+    .nav-content {
+        padding:0 8px;
+    }
+}
+
 .nav-content ul {
     list-style-type: none;
 }
@@ -123,6 +129,7 @@ nav {
 .add-playlists {
     margin: 5px 0;
 }
+
 .add {
     height: 35px;
     width: 35px;
@@ -132,11 +139,62 @@ nav {
     display: inline-block;
     cursor: pointer;    
 }
+
 .add-playlists a {
     font-size: 14px;
     padding-left: 10px;
+    vertical-align: middle;
 }
 
+.spotify-users {
+    margin-bottom: 5px;
+}
+
+.download-app {
+    width: 18px;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.download-app img {
+    vertical-align: middle;
+}
+
+.get-app::after {
+    content:"";
+    display: block;
+    width: 190px;
+    color: grey;
+    border-bottom: 1px solid white;
+    margin: 10px 0;
+}
+
+.profile a {
+    color: white;
+    padding-left: 10px;
+}
+
+#account {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;    
+}
+
+@media all and (max-width: 768px) {
+    .download-app {
+       margin: 0 5px;
+    }
+    .spotify-users {
+        margin-bottom: 0;
+    }
+    #account {
+        margin-top: 10px;
+    }
+}
 
 
 
@@ -161,12 +219,17 @@ main {
 
 
 
+
+
 /* FOOTER */
 
 footer {
     height: 80px;    
     background-color: #282828;
 }
+
+
+
 
 
 
