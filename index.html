@@ -33,9 +33,9 @@
                 <div class="nav-content">        
 
                     <!-- app-nav -->
-                    <div class="app-nav">
+                    <div class="app-nav xs-hidden">
                         <ul>
-                            <li class="ms-bold">                                
+                            <li class="ms-bold">
                                 <a href="">
                                     <img src="img/home.svg" alt="">
                                     Home
@@ -56,7 +56,14 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
 
+                    <div class="hidden-nav sm-hidden">
+                        <ul>
+                            <li><a href=""><img src="img/home.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/search.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/libreria.svg" alt=""></a></li>
+                        </ul>
                     </div>
                     <!-- end app-nav -->
 
@@ -84,34 +91,37 @@
                     </div>
                     <!-- end playlist -->
 
-
                     <!-- spotify users -->
 
                     <div class="spotify-users">
 
-                        <div class="download-app">
-                            <a href="">Installa app</a>
+                        <div class="xs-hidden">
+                            <div class="get-app">
+                                <a href="">
+                                    <div class="download-app"><img src="img/download.svg" alt=""></div>
+                                    Installa app
+                                </a>
+                            </div>
+    
+                            <div class="profile">
+                                <div id="account"><img src="img/profile.svg" alt=""></div>
+                                <a href="">John Doe</a>
+                            </div>
                         </div>
-
-                        <div class="user">
-                            <a href="">John Doe</a>
-                        </div>
-
                         
+                        <div class="hidden-users sm-hidden">
+                            <div class="download-app"><img src="img/download.svg" alt=""></div>
+                            <div id="account"><img src="img/profile.svg" alt=""></div>
+                        </div>
 
                     </div>
 
                     <!-- end spotify users -->
-
-
-                    
-                    
-
-
                 </div>
                 <!-- end nav content -->
             </nav>
             <!-- end NAV -->
+
 
             <!-- MAIN -->
             <main>
