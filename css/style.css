@@ -11,7 +11,8 @@ img {
 
 /* Common */
 body {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 #app-wrapper {
@@ -26,7 +27,6 @@ a {
 ul {
     list-style-type: none;
 }
-
 
 @media all and (max-width: 768px) {
     .xs-hidden {
@@ -247,14 +247,13 @@ main {
     text-align: center;
 }
 
-.sptfy-menu li::after {
+.green-line::after {
     content:"";
     display: block;
     width: 30px;    
     border-bottom: 2px solid green;
-    margin: 10px 0;    
+    margin: 5px auto;        
 }
-    
 
 .sptfy-menu a {
     text-transform: uppercase;
@@ -294,6 +293,43 @@ main {
     .sptfy-menu li {    
         width: calc( 100% / 5);
     } 
+}
+
+/* main content */
+
+.main-content {
+    padding: 0 15px;
+}
+
+.main-content a {
+    color: white;
+    text-align: center;    
+}
+
+.main-content span {
+    color: grey;
+    font-size: 12px; 
+    display: block; 
+    text-align: center; 
+    padding: 10px 0;     
+}
+
+.subtitle {
+    padding: 20px 0;
+}
+
+.music-list {
+    padding: 20px 0;
+}
+
+
+.recently-played {
+    display: flex;
+}
+
+.recently-played li {
+    width: calc( 100% / 6);
+    padding: 0 5px;
 }
 
 
