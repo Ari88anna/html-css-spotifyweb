@@ -19,6 +19,14 @@ body {
     width: 100%;   
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 
 @media all and (max-width: 768px) {
     .xs-hidden {
@@ -81,18 +89,18 @@ nav {
     }
 }
 
-.nav-content ul {
-    list-style-type: none;
-}
 .nav-content li {
     padding-top: 10px;
 }
 
 .nav-content a {
-    color: grey;
-    text-decoration: none;
+    color: grey;    
     font-weight: 900;
     font-size: 12px;
+}
+
+.nav-content a:hover {
+    color: white;
 }
 
 .ms-bold a {
@@ -113,6 +121,7 @@ nav {
     vertical-align: middle;
 }
 
+
 .playlist {
     overflow: hidden;
 }
@@ -127,25 +136,32 @@ nav {
     padding-top: 20px;
 }
 
-.add-playlists {
+.add-playlist {
     margin: 5px 0;
 }
 
-.add {
+.add-playlist i {
     height: 35px;
     width: 35px;
     background-color: grey;
     text-align: center;
     line-height: 35px;
     display: inline-block;
-    cursor: pointer;    
+    color: black;   
 }
 
-.add-playlists a {
-    font-size: 14px;
-    padding-left: 10px;
-    vertical-align: middle;
+.add-playlist i:hover {
+    background-color: white;
 }
+
+.add {
+    padding-left: 10px;
+}
+
+.add-playlist a {
+    font-size: 14px;    
+}
+
 
 .spotify-users {
     margin-bottom: 5px;
@@ -164,15 +180,16 @@ nav {
 .get-app::after {
     content:"";
     display: block;
-    width: 190px;
-    color: grey;
-    border-bottom: 1px solid white;
+    width: 190px;    
+    border-bottom: 1px solid grey;
     margin: 10px 0;
 }
 
-.profile a {
+.profile span {
     color: white;
     padding-left: 10px;
+    font-size: 12px;
+    font-weight: 900;
 }
 
 #account {
@@ -202,12 +219,81 @@ main {
     width: calc(100% - 250px);
     padding-top: 80px;    
     background-color:#141922;
+    overflow-y: auto;
 }
 
 @media all and (max-width: 768px) {
     main {
         width: calc( 100% - 50px)
     }
+}
+
+/* upper menu */
+
+.upper-menu {
+    max-width: 800px;
+    margin:auto;
+    padding: 20px 10px;
+    
+}
+
+.sptfy-menu {
+    display: flex;
+    flex-wrap: wrap;        
+}
+
+.sptfy-menu li {    
+    width: calc( 100% / 6);
+    text-align: center;
+}
+
+.sptfy-menu li::after {
+    content:"";
+    display: block;
+    width: 30px;    
+    border-bottom: 2px solid green;
+    margin: 10px 0;    
+}
+    
+
+.sptfy-menu a {
+    text-transform: uppercase;
+    color: grey;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sptfy-menu a:hover {
+    color: white;
+}
+
+@media all and (max-width: 768px) {
+    .sptfy-menu li {    
+        width: calc( 100% / 4);        
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .upper-menu {
+        height: 140px;
+    }
+    .sptfy-menu {
+        height: 100%;
+        align-content: space-between;
+        justify-content: center;
+    } 
+}
+
+@media all and (min-width: 769px) and (max-width: 991px) {
+    .sptfy-menu li {    
+        width: calc( 100% / 3);
+    }   
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .sptfy-menu li {    
+        width: calc( 100% / 5);
+    } 
 }
 
 
@@ -246,3 +332,4 @@ footer {
         width: calc( 100% - 50px);
     }
 }
+
