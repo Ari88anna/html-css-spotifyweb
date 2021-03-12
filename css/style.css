@@ -337,7 +337,35 @@ main {
 
 .music-played li {
     width: calc( 100% / 6);
-    padding: 0 5px;
+    padding: 0 5px;    
+}
+
+.music-box {
+    position: relative;
+}
+
+.layover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    font-size: 50px;
+    display: none;    
+}
+
+.music-box:hover .layover,
+.music-box:hover .play-circle {
+    display: block;
 }
 
 /* @media all and (max-width: 768px) {
@@ -356,6 +384,10 @@ main {
     .music-played li {
         width: calc( 100% / 4);        
     }
+}
+
+.most-popular img {
+    border-radius: 50%;
 }
 
 
@@ -390,5 +422,24 @@ footer {
     .header-fixed {
         width: calc( 100% - 50px);
     }
+}
+
+.upgrade-btn a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 14px 50px;
+    transition: all .2s ease-in-out
+}
+
+.upgrade-btn a:hover {    
+    border: 3px solid white;
+}
+
+.upgrade-btn {
+    margin: 30px 30px;
 }
 
