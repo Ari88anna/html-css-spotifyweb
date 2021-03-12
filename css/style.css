@@ -381,13 +381,12 @@ main {
     }
 }
 
+.most-popular .layover,
 .most-popular img {
     border-radius: 50%;
 }
 
-
-
-
+ 
 /* FOOTER */
 
 footer {
@@ -431,10 +430,23 @@ footer {
     font-size: 10px;;
 }
 
+.album-title span:hover {
+    text-decoration: underline;
+}
+
 /* favorite songs */
 
 .favorite-songs {
     flex-grow: 1;
+}
+
+.favorite-songs i {
+    color: grey;
+    padding-left: 10px;
+}
+
+.favorite-songs i:hover {
+    color: white;
 }
 
 @media all and (max-width: 768px) {
@@ -469,6 +481,14 @@ footer {
     font-weight: 800;
 }
 
+.left-time {
+    padding-right: 20px;
+}
+
+.right-time {
+    padding-left: 20px;
+}
+
 .grey-bar {
     height: 3px;
     width: 450px;
@@ -499,22 +519,42 @@ footer {
     bottom: -3px;
     font-size: 10px;    
 }
-
-
-
-
-
-
-
 /* volume */
 
 .volume {
     flex-grow: 3;
+    text-align: right;
+}
+
+.volume i {
+    font-size: 12px;
+    padding-left: 10px
 }
 
 .vol-bar {
-    /* test */
-    background-color: thistle;
+    height: 3px;
+    width: 100px;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 20px;    
+    position: relative; 
+    vertical-align: middle; 
+    margin-left: 10px;  
+}
+
+.vol-white-bar {
+    height: 3px;
+    width: 20px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+@media all and (max-width: 768px){
+    
 }
 
 
