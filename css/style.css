@@ -399,13 +399,14 @@ footer {
     height: 80px;
     padding: 0 5px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center;    
 }
 
 .footer-content a {
     color: white;
 }
+
+/* album */
 
 .album {
     flex-grow: 1;
@@ -430,6 +431,8 @@ footer {
     font-size: 10px;;
 }
 
+/* favorite songs */
+
 .favorite-songs {
     flex-grow: 1;
 }
@@ -444,20 +447,66 @@ footer {
     }
 }
 
+/* player */
+
 .player {
     flex-grow: 10;
+    text-align: center;
 }
 
-.play-music {
-    
-    /* test */
-    background-color: violet;
+.smaller-btn {
+    font-size: 12px;
+    padding: 0 5px;    
+}
+.play-btn {
+    font-size: 30px;
+    padding: 0 15px;
+    vertical-align: middle;
 }
 
-.music-bar {
-    /* test */
-    background-color: aquamarine;
+[class*="-time"] {
+    font-size: 9px;
+    font-weight: 800;
 }
+
+.grey-bar {
+    height: 3px;
+    width: 450px;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 20px;
+    margin: 2px 0;
+    position: relative;
+}
+.white-bar {
+    height: 3px;
+    width: 150px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.white-bar:hover {
+    background-color: chartreuse;
+}
+
+.grey-bar i {
+    position: absolute;
+    left: 150px;
+    bottom: -3px;
+    font-size: 10px;    
+}
+
+
+
+
+
+
+
+/* volume */
 
 .volume {
     flex-grow: 3;
