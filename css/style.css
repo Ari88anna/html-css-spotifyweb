@@ -11,8 +11,7 @@ img {
 
 /* Common */
 body {
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Montserrat', sans-serif;    
     color: white;
 }
 
@@ -78,7 +77,7 @@ nav {
     padding: 10px 20px;
 }
 .sptfy-logo-small {
-    padding: 5px     
+    padding: 5px;     
 }
 
 
@@ -187,7 +186,7 @@ nav {
 .download-app {
     width: 18px;
     display: inline-block;
-    margin-right: 5px
+    margin-right: 5px;
 }
 
 
@@ -210,7 +209,7 @@ nav {
     font-weight: 900;
 }
 
-#account {
+.account {
     width: 30px;
     height: 30px;
     background-color: grey;
@@ -248,7 +247,7 @@ main {
 .upper-menu {
     max-width: 800px;
     margin:auto;
-    padding: 20px 10px;
+    padding: 20px 5px;
     
 }
 
@@ -273,7 +272,7 @@ main {
 .sptfy-menu a {
     text-transform: uppercase;
     color: #74767b;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -284,7 +283,7 @@ main {
 @media all and (max-width: 768px) {
     .sptfy-menu li {    
         width: calc( 100% / 4);        
-    }
+    }    
 }
 
 @media all and (max-width: 1199px) {
@@ -638,7 +637,7 @@ footer {
 }
 
 .upgrade-btn {
-    margin: 10px 30px;
+    margin: 20px 30px;
     vertical-align: middle;
 }
 
