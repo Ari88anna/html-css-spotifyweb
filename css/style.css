@@ -468,17 +468,22 @@ footer {
 
 .smaller-btn {
     font-size: 12px;
-    padding: 0 5px;    
+    padding: 0 5px; 
+    color: white;   
 }
 .play-btn {
     font-size: 30px;
     padding: 0 15px;
     vertical-align: middle;
+    color: white;
+}
+.play-btn:hover {
+    font-size: 32px;
 }
 
 [class*="-time"] {
     font-size: 9px;
-    font-weight: 800;
+    font-weight: 800;    
 }
 
 .left-time {
@@ -491,7 +496,7 @@ footer {
 
 .grey-bar {
     height: 3px;
-    width: 450px;
+    width: 60%;
     display: inline-block;
     background-color: grey;
     border-radius: 20px;
@@ -517,8 +522,14 @@ footer {
     position: absolute;
     left: 150px;
     bottom: -3px;
-    font-size: 10px;    
+    font-size: 10px;  
+    display: none; 
 }
+
+.grey-bar:hover i {
+    display: block;    
+}
+
 /* volume */
 
 .volume {
@@ -544,7 +555,7 @@ footer {
 
 .vol-white-bar {
     height: 3px;
-    width: 20px;
+    width: 30px;
     display: inline-block;
     background-color: white;
     border-radius: 20px;
@@ -553,8 +564,24 @@ footer {
     cursor: pointer;
 }
 
+.vol-bar i {
+    position: absolute;
+    left: 20px;
+    top: -3px;
+    font-size: 10px;
+    display: none;
+}
+
+.vol-white-bar:hover {
+    background-color: chartreuse;
+}
+
+.vol-bar:hover i {
+    display: block;
+}
+
 @media all and (max-width: 768px){
-    
+   
 }
 
 
@@ -591,12 +618,17 @@ footer {
     font-weight: 600;
     border: 1px solid white;
     border-radius: 25px;
-    padding: 14px 50px;
-    transition: all .2s ease-in-out
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
 
-.upgrade-btn a:hover {    
-    border: 3px solid white;
+.upgrade-btn a:hover { 
+    font-size: 15px;
+    padding: 15px;  
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .upgrade-btn {
