@@ -11,7 +11,8 @@ img {
 
 /* Common */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     color: white;
 }
 
@@ -102,7 +103,7 @@ nav {
 }
 
 .nav-content a {
-    color: grey;    
+    color: #6b6b6b;    
     font-weight: 900;
     font-size: 12px;
 }
@@ -111,7 +112,13 @@ nav {
     color: white;
 }
 
+.nav-content img {
+    opacity: 0.7;
+}
 
+.nav-content a:hover img {
+    opacity: 1;
+}
 
 .ms-bold a {
     color: white;
@@ -183,6 +190,7 @@ nav {
     margin-right: 5px
 }
 
+
 .download-app img {
     vertical-align: middle;
 }
@@ -191,7 +199,7 @@ nav {
     content:"";
     display: block;
     width: 190px;    
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #6b6b6b;
     margin: 10px 0;
 }
 
@@ -217,9 +225,6 @@ nav {
        margin: 15px 5px;
     }
 }
-
-
-
 
 
 /* MAIN */
@@ -267,7 +272,7 @@ main {
 
 .sptfy-menu a {
     text-transform: uppercase;
-    color: grey;
+    color: #74767b;
     font-size: 13px;
     font-weight: 600;
 }
@@ -308,7 +313,7 @@ main {
 /* main content */
 
 .main-content {
-    padding: 0 15px;
+    padding: 20px 15px;
 }
 
 .main-content a {
@@ -424,16 +429,23 @@ footer {
     display: inline-block;
     margin-left: 5px;
     vertical-align: middle;
+}
 
+.album-title a {
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .album-title span {
     color: grey;
-    font-size: 10px;;
+    font-size: 10px;
+    font-weight: 600;
+    display: block;
 }
 
 .album-title span:hover {
     text-decoration: underline;
+    color: white;
 }
 
 /* favorite songs */
@@ -485,8 +497,8 @@ footer {
 }
 
 [class*="-time"] {
-    font-size: 9px;
-    font-weight: 800;    
+    font-size: 10px;
+    font-weight: 600;    
 }
 
 .left-time {
@@ -501,7 +513,7 @@ footer {
     height: 3px;
     width: 60%;
     display: inline-block;
-    background-color: grey;
+    background-color: #5a5a5a;
     border-radius: 20px;
     margin: 2px 0;
     position: relative;
@@ -510,7 +522,7 @@ footer {
     height: 3px;
     width: 35%;
     display: inline-block;
-    background-color: white;
+    background-color: #c1c1c1;
     border-radius: 20px;
     position: absolute;
     left: 0;
@@ -569,7 +581,7 @@ footer {
 
 .vol-bar i {
     position: absolute;
-    left: 15%;
+    left: 8%;
     top: -3px;
     font-size: 10px;
     display: none;
@@ -585,18 +597,9 @@ footer {
 
 @media all and (max-width: 768px){
     .volume {
-        flex-grow: 11;
-    }
-   
+        flex-grow: 12;
+    }   
 }
-
-
-
-
-
-
-
-
 
 
 /* Header Fixed */
@@ -631,10 +634,11 @@ footer {
 }
 
 .upgrade-btn:hover { 
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .upgrade-btn {
-    margin: 30px 30px;
+    margin: 10px 30px;
+    vertical-align: middle;
 }
 
