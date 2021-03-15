@@ -490,16 +490,16 @@ footer {
 }
 
 .left-time {
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .right-time {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .grey-bar {
     height: 3px;
-    width: 450px;
+    width: 60%;
     display: inline-block;
     background-color: grey;
     border-radius: 20px;
@@ -523,7 +523,7 @@ footer {
 
 .grey-bar i {
     position: absolute;
-    left: 150px;
+    left: 35%;
     bottom: -3px;
     font-size: 10px;  
     display: none; 
@@ -531,12 +531,6 @@ footer {
 
 .grey-bar:hover i {
     display: block;    
-}
-
-@media all and (max-width: 768px){
-   .grey-bar {
-       width: 100px;
-   }
 }
 
 /* volume */
@@ -553,7 +547,7 @@ footer {
 
 .vol-bar {
     height: 3px;
-    width: 100px;
+    width: 40%;
     display: inline-block;
     background-color: grey;
     border-radius: 20px;    
@@ -564,7 +558,7 @@ footer {
 
 .vol-white-bar {
     height: 3px;
-    width: 30px;
+    width: 25%;
     display: inline-block;
     background-color: white;
     border-radius: 20px;
@@ -575,7 +569,7 @@ footer {
 
 .vol-bar i {
     position: absolute;
-    left: 20px;
+    left: 15%;
     top: -3px;
     font-size: 10px;
     display: none;
@@ -590,6 +584,9 @@ footer {
 }
 
 @media all and (max-width: 768px){
+    .volume {
+        flex-grow: 11;
+    }
    
 }
 
