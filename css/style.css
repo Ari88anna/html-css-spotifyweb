@@ -111,6 +111,8 @@ nav {
     color: white;
 }
 
+
+
 .ms-bold a {
     color: white;
     font-weight: 900;
@@ -476,9 +478,10 @@ footer {
     padding: 0 15px;
     vertical-align: middle;
     color: white;
+    transition: all 300ms;
 }
 .play-btn:hover {
-    font-size: 32px;
+    transform: scale(1.5);
 }
 
 [class*="-time"] {
@@ -611,24 +614,21 @@ footer {
     }
 }
 
-.upgrade-btn a {
+.upgrade-btn {
     text-transform: uppercase;
     color: white;
+    background-color: #080b12;
     font-size: 14px;
     font-weight: 600;
     border: 1px solid white;
     border-radius: 25px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 300ms;  
 }
 
-.upgrade-btn a:hover { 
-    font-size: 15px;
-    padding: 15px;  
-    padding-left: 25px;
-    padding-right: 25px;
+.upgrade-btn:hover { 
+    transform: scale(1.3);
 }
 
 .upgrade-btn {
